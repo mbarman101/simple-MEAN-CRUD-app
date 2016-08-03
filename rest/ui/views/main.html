@@ -1,0 +1,31 @@
+<div layout="row">
+	<md-content class="md-padding" flex="100" style="background-color : transparent;height:100%" layout-fill>
+		<md-tabs md-dynamic-height md-border-bottom>
+			
+			<md-tab label="Find FOOD by Cook" class="setWhiteColor">
+				<md-content class="md-padding" style="background-color : transparent;">
+				  <div ng-include src="'views/food/foodByCookList.html'"></div>
+				</md-content>
+			</md-tab>
+			
+			<!-- <md-tab label="Find food by menu">
+				<md-content class="md-padding" style="background-color : transparent">
+				   <div ng-include src="'views/food/foodByMenuList.html'"></div>
+				</md-content>
+			</md-tab> -->
+
+			<md-tab label="Add New Food Item">
+				<md-content class="md-padding" style="background-color : transparent;">
+				   <div ng-include src="'views/food/addFood.html'"></div>
+				</md-content>
+			</md-tab>
+
+			<md-tab label="Add New Cook">
+				<md-content class="md-padding" style="background-color : transparent;"">
+				   <div ng-include src="'views/food/addCook.html'"></div>
+				</md-content>
+			</md-tab>
+
+		</md-tabs>
+	</md-content>
+</div>

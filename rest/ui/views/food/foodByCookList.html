@@ -1,0 +1,26 @@
+<div layout="row" flex layout-align="center start" ng-controller="cookListController">
+	
+	<div flex="50" layout="column" md-padding md-margin>
+		<div>Cook Name</div>
+		<div layout="row"  layout-align=" start" flex>
+			<md-radio-group ng-model="cookId" ng-change="onCookSelection()" class="md-primary">
+			<md-radio-button ng-repeat="d in cookList" ng-value="d._id">
+			{{ d.name.first}}<br/>
+			</md-radio-button>
+			</md-radio-group>
+		</div>
+		<md-button  class="md-raised"ng-disabled="!cookId" ng-click="deleteCook()" aria-label="DELETE COOK" md-ripple-size="auto">DELETE</md-button>
+	</div>
+	<div flex="50" layout="row">
+		<div>Menu Available</div>
+		<div flex>
+			<md-list flex="200">
+			<md-list-item ng-repeat="food in foodList">
+			<p> {{ food.foodName }} </p>
+			<md-checkbox class="md-secondary" ng-model="food.selected"></md-checkbox>
+			</md-list-item>
+			</md-list>
+		</div>
+	</div>
+	
+</div>

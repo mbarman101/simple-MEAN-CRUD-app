@@ -1,0 +1,7 @@
+angular.module('expressApp').controller('cookListController', ['$scope','$http','ngDialog', '$rootScope', function($scope, $http, ngDialog, $rootScope){
+
+	
+
+	
+}]);
+

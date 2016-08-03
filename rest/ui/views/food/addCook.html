@@ -1,0 +1,26 @@
+<div layout="column" ng-controller="addCookController">
+  
+      <div layout="row"  style="height:60px">
+        <md-input-container>
+          <label>Cook First Name</label>
+          <input type="text" ng-model="cook.fname">
+        </md-input-container>
+        <md-input-container>
+          <label>Cook Last Name</label>
+          <input type="text" ng-model="cook.lname">
+        </md-input-container> 
+      </div>
+      
+      <div layout="row"  style="height:260px;overflow:auto;">
+         <md-list flex="100">
+          <md-list-item ng-repeat="food in foodList">
+             <p> {{ food.foodName }} </p>
+             <md-checkbox class="md-secondary" ng-model="food.selected"></md-checkbox>
+          </md-list-item>
+        </md-list> 
+      </div>
+     
+      <div layout="row" style="height:60px">
+        <md-button class="md-raised md-primary"  ng-click="addCook()">ADD COOK</md-button>
+      </div>
+</div>

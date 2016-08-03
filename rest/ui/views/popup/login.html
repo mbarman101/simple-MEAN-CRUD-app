@@ -1,0 +1,18 @@
+<div layout="column">
+  <md-content md-theme="docs-dark" layout-padding layout="column" layout-sm="column">
+    
+        <md-input-container>
+	      <label>E-MAIL</label>
+	      <input ng-model="user.email">
+	    </md-input-container>
+    
+	    <md-input-container>
+	      <label>PASSWORD</label>
+	      <input ng-model="user.passWord" type="password">
+	    </md-input-container>
+
+        <md-button class="md-raised md-primary"  ng-click="signWithPassport()">Sign In</md-button> 
+        <md-button class="md-raised md-primary" ng-hide="isLoggedIn" ng-click="login()">Sign In using Facebook</md-button> 
+        <md-button class="md-raised md-primary" ng-show="isLoggedIn" ng-click="signOutFromFacebookLogIn()">Log Out</md-button> 
+  </md-content>
+<div>

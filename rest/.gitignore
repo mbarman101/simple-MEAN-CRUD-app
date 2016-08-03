@@ -1,0 +1,10 @@
+node_modules
+.tmp
+.sass-cache
+.bower_tmp
+app/*.sublime-project
+app/*.sublime-workspace
+ui/bower_components
+app/styles/main.css
+app/styles/main.css.map
+/target/

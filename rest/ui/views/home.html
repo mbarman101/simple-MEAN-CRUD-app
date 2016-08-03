@@ -1,0 +1,29 @@
+<div flex layout="row" layout-wrap layout-align="space-between center" ng-controller="homeController" id="home-container">
+	
+	
+	<div flex="100" layout="row" layout-align="center center"  style="width:100%;height: 500px;vertical-align:middle;text-align:center">
+		
+		<div flex layout="row" layout-align="center center" ng-click="showDialog($event)"
+		 style=" color:white;height:50px !important;
+		background-color :transparent; cursor :pointer;">
+				<label style="width:200px;"><h1><b>SIGN IN</b></h1></label>
+				<div>
+					<ng-md-icon icon="person" size="50" style="fill: white"></ng-md-icon>
+				</div>	
+		</div>
+		
+		<div flex layout="row" layout-align="center center" ng-click="signMeUp($event)"
+		 style=" color:white;height:50px !important;
+		background-color : transparent; cursor :pointer;">	
+				<label style="width:200px;"><h1><b>SIGN UP</b></h1></label>
+				<div>
+					<ng-md-icon icon="person_add" size="50" style="fill: white"></ng-md-icon>
+				</div>
+				
+		</div>
+		
+		
+	</div>
+	
+</div>
+
